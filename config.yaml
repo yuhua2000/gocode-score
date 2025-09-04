@@ -1,0 +1,22 @@
+# config.yaml - default configuration for gocode-score
+
+# Maximum file size to read (bytes)
+max_file_size: 10485760   # 10 MB
+
+# Maximum analysis depth for packages
+max_analysis_depth: 5
+
+# Analysis timeout in seconds
+timeout: 30
+
+# Enable or disable analyzers
+enable:
+  style: true
+  complexity: true
+  naming: true
+
+# Analyzer weights (used for scoring)
+weight:
+  style: 1.0
+  complexity: 1.5
+  naming: 1.0
